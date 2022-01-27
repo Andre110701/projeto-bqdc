@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Paragraph, Title } from './components/atoms/typography/typography';
+import { Images } from './components/atoms/Images/images'
+import folder1 from './assets/group5025.png'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Paragraph type="bold">Teste Tipografia</Paragraph>
+        <Paragraph>Teste</Paragraph>
+        <Title variant="h1">Lorem</Title>
       </header>
+      <div>
+       <Images src={folder1} alt="Folder" />
+      </div>
     </div>
   );
 }
-
 export default App;
