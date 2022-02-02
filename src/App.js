@@ -1,20 +1,18 @@
-
-import { Paragraph, Title } from './components/atoms/typography/typography';
-import { Images } from './components/atoms/Images/images'
-import folder1 from './assets/group5025.png'
+import Header from './components/molecules/Header/Header';
+import AboutUs from './components/molecules/AboutUs/AboutUs'
+import Banner from './assets/difundirBanner.png'
+import {Images} from './components/atoms/Images/images'
+const  GlobalStyle = require('./styles/globalStyles') ;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Paragraph type="bold">Teste Tipografia</Paragraph>
-        <Paragraph>Teste</Paragraph>
-        <Title variant="h1">Lorem</Title>
-      </header>
-      <div>
-       <Images src={folder1} alt="Folder" />
-      </div>
-    </div>
+    <>
+    <Header />
+    <Images src={Banner} alt='Difundir' />
+    <AboutUs />
+    <GlobalStyle />
+    </>
+    
   );
 }
 export default App;
