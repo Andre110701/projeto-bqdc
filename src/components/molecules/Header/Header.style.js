@@ -2,11 +2,12 @@ import styled, { css } from "styled-components"
 
 export const Container = styled.div`
 ${()=>css`
-padding: 12px;
+padding: 24px 96px;
 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
 display: flex;
 justify-content: space-between;
-position: relative; 
+align-items:center;
+position: relative;   
 width: 100%;
 `}`
 
@@ -29,5 +30,5 @@ margin: 0px 32px 0px 0px;
 export const Buttons = styled.div`
 ${()=>css`
 display: flex;
-position: relative; 
+height:max-content;
 `}`

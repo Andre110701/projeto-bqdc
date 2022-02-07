@@ -1,6 +1,6 @@
 import * as S from "./buttons.styles"
 
 
-export const Button = ({type,children}) =>{
-  return (<S.Button>{children}</S.Button>)
+export const Button = ({color,variant,children}) =>{
+  return (<S.Button variant={variant} color={color}>{children}</S.Button>)
 }

@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components"
 
 export const Images = styled.img`
-${({theme})=>css`
-width: 100%;
-max-height: 80vh;
-border-radius: 16px;
+${({border, type})=>css`
+border-radius: ${border === "border" ? "24px" : "none"};
 `}`
 
 export const Logo = styled.img`
-${({theme})=>css`
+${({theme,size})=>css`
+height: ${size === 'large' ? '80px' : '56px'};
+
 `}`

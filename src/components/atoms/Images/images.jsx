@@ -1,9 +1,9 @@
 import * as S from "./images.styles"
 
-export const Images = (theme) => {
-  return <S.Images theme={theme} src={theme.src} alt={theme.alt}/>
-} 
+export const Images = (type) => {
+  return <S.Images border={type.border} type={type} src={type.src} alt={type.alt} />
+}
 
-export const Logo = (theme) => {
-  return <S.Logo theme={theme} src={theme.src} alt={theme.alt}/>
+export const Logo = (theme,size) => {
+  return <S.Logo size={size} theme={theme} src={theme.src} alt={theme.alt} />
 } 
